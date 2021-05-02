@@ -9,7 +9,7 @@ Run the following to install:
 pip install imTriangle
 ```
 
-# Usage
+## Usage
 ```python
 import cv2
 import numpy as np
@@ -27,7 +27,7 @@ for i in range(d):
 cv2.imwrite('assets/lotus-triangled.jpg', img_out)
 ```
 
-# Output
+## Output
 This is a sample image:  
 ![lotus.jpg](https://raw.githubusercontent.com/Mamdasn/imTriangle/main/assets/lotus.jpg "lotus.jpg")  
 The sample image after tirangle pixelation effect:  
