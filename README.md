@@ -1,6 +1,14 @@
 # imTriangle
 This snippet of code attempts to put triangle pixelation effect on images.
 
+## Installation
+
+Run the following to install:
+
+```python
+pip install imTriangle
+```
+
 # Usage
 ```python
 import cv2
