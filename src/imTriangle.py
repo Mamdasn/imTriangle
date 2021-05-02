@@ -25,13 +25,17 @@ def _decrook(crooked_image, RTL=True):
             fixed_image[i, :] = crooked_image[i, h-1-i:w-i]
     return fixed_image
 
-def triangle(image):
+def triangle(image, r = None):
+    h = image.shape[0]
+    w = image.shape[1]
+    if not r:
+        r = min(h, w)//150
     image_crooked_left = _crook(image, RTL=True)
-    image_pix_crooked_left = pix(image_crooked_left)
+    image_pix_crooked_left = pix(image_crooked_left, r)
     image_pix_decrooked_left = _decrook(image_pix_crooked_left, RTL=True)
     
     image_crooked_right = _crook(image, RTL=False)
-    image_pix_crooked_right = pix(image_crooked_right)
+    image_pix_crooked_right = pix(image_crooked_right, r)
     image_pix_decrooked_right = _decrook(image_pix_crooked_right, RTL=False)
     
     return ((image_pix_decrooked_right+image_pix_decrooked_left)/2).astype(image.dtype)
