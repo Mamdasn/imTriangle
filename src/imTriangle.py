@@ -25,10 +25,11 @@ def _decrook(crooked_image, RTL=True):
             fixed_image[i, :] = crooked_image[i, h-1-i:w-i]
     return fixed_image
 
-def triangle(image, r = None):
+@numba.njit()
+def triangle(image, r = 0):
     h = image.shape[0]
     w = image.shape[1]
-    if not r:
+    if r==0:
         r = min(h, w)//150
     image_crooked_left = _crook(image, RTL=True)
     image_pix_crooked_left = pix(image_crooked_left, r)
