@@ -12,7 +12,7 @@ img_out = img.copy()
 
 [h, w, d] = img.shape
 for i in range(d):
-    img_out[:, :, i] = triangle(img[:, :, i].copy())
+    img_out[:, :, i] = triangle(img[:, :, i].copy(), coef=0.5)
 
 
     
