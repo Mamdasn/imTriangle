@@ -29,6 +29,6 @@ cv2.imwrite('assets/lotus-triangled.jpg', img_out)
 
 ## Output
 This is a sample image:  
-![groningen.jpg](https://raw.githubusercontent.com/Mamdasn/imTriangle/main/assets/groningen.jpg "groningen.jpg")  
+![lotus.jpg](https://raw.githubusercontent.com/Mamdasn/imTriangle/main/assets/lotus.jpg "lotus.jpg")  
 The sample image after tirangle pixelation effect:  
-![groningen-triangled.jpg](https://raw.githubusercontent.com/Mamdasn/imTriangle/main/assets/groningen-triangled.jpg "groningen-triangled.jpg")  
+![lotus-triangled.jpg](https://raw.githubusercontent.com/Mamdasn/imTriangle/main/assets/lotus-triangled.jpg "lotus-triangled.jpg")  
