@@ -10,8 +10,7 @@ def _crook(image, coef=0.5, RTL=True):
     ww = int(w+ coef*h - coef)
     crooked_image = np.zeros((hh, ww))
     for i in range(h):
-        if int(coef*i) == coef*i:
-            coefi = int(coef*i)
+        coefi = int(coef*i)
         if RTL:
             crooked_image[i, 0+coefi:w+coefi] = image[i, :]
         else:
@@ -24,8 +23,7 @@ def _decrook(crooked_image, ww, coef=0.5, RTL=True):
     hh = h
     fixed_image = np.zeros((hh, ww))
     for i in range(h):
-        if int(coef*i) == coef*i:
-            coefi = int(coef*i)
+        coefi = int(coef*i)
         if RTL:
             fixed_image[i, :] = crooked_image[i, 0+coefi:ww+coefi]
         else:
