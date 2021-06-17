@@ -25,6 +25,10 @@ for i in range(d):
     img_out[:, :, i] = triangle(img[:, :, i].copy())
     
 cv2.imwrite('assets/lotus-triangled.jpg', img_out)
+```  
+Or  
+```console
+imTriangle --input 'assets/lotus.jpg' --output 'assets/lotus-triangled.jpg'
 ```
 
 ## Output
