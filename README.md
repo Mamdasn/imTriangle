@@ -2,6 +2,7 @@
 [![Package Status](https://img.shields.io/pypi/status/imTriangle.svg)](https://pypi.org/project/imTriangle/)
 [![Downloads](https://pepy.tech/badge/imTriangle)](https://pepy.tech/project/imTriangle)
 [![License](https://img.shields.io/pypi/l/imTriangle.svg)](https://github.com/Mamdasn/imTriangle/blob/main/LICENSE)
+![Repository Size](https://img.shields.io/github/languages/code-size/mamdasn/imTriangle)
 
 # imTriangle
 This snippet of code attempts to put triangle pixelation effect on images.
